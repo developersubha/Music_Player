@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.leftPart{
+    width: 25vw;
+    padding: 10px;
+}
+
+.rightPart{
+    width: 75vw;
+}
+
+.home ul li{
+    display: flex;
+    gap: 10px;
+    width: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img{
+    width: 25px;
+}
+
+.library{
+    min-height: 50vh;
+}
+
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+}
+
+.footer a{
+    color: grey;
+}
