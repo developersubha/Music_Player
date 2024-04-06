@@ -23,22 +23,38 @@ body{
     width: 15px;
     list-style: none;
     padding-top: 14px;
+    padding-left: 10px;
     font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .heading{
     display: flex;
-    gap: 10px;
+    gap: 150px;
     width: 100%;
-    padding-top: 14px;
     padding: 23px 14px;
     font-weight: bold;
     align-items: center;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .heading img{
     width: 25px;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .library{
@@ -67,17 +83,18 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(34 34 34);
 }
 
 .header > *{
-    padding: 18px;
+    padding: 10px;
 }
 
 .playlist{
     padding: 15px;
     overflow-y: scroll;
-    max-height: 50vh;
+    max-height: 70vh;
 }
 
 .artistCard{
@@ -105,6 +122,78 @@ body{
     object-fit: contain;
 }
 
+.dailymixCard{
+    margin: 25px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.dailymix{
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+
+.dailymix > *{
+    padding-top: 6px;
+}
+
+.dailymix img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.recentlyplayCard{
+    margin: 25px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.recentlyplay{
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+
+.recentlyplay > *{
+    padding-top: 6px;
+}
+
+.recentlyplay img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.top50Card{
+    margin: 25px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.top50{
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+
+.top50 > *{
+    padding-top: 6px;
+}
+
+.top50 img{
+    width: 100%;
+    object-fit: contain;
+}
+
 .play{
     background-color: #0e883b;
     border-radius: 50%;
@@ -113,10 +202,11 @@ body{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 178px;
+    top: 150px;
     right: 15px;
     opacity: 1;
     transition: all 1s ease-out;
+    cursor: pointer;
 }
 
 .buttons>* {
@@ -153,22 +243,6 @@ body{
     font-size: 17px;
 }
 
-.playbar{
-    position: fixed;
-    bottom: 22px;
-    filter: invert(1);
-    background-color: #dad5d5;
-    border-radius: 10px;
-    width: 72vw;
-    height: 40px;
-    padding: 12px;
-}
-.songbuttons{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
 .songList{
     height: 385px;
     overflow-y: auto;
@@ -182,6 +256,7 @@ body{
     list-style-type: decimal;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
     cursor: pointer;
     border: 1px solid white;
@@ -207,12 +282,20 @@ body{
     padding: 10px;
 }
 
-.seekbar{
-    width: 94%;
+.playbar{
+    position: fixed;
+    filter: invert(1);
+    background-color: #dad5d5;
     border-radius: 10px;
-    position: absolute;
-    bottom: 2px;
-    margin: 4px;
+    width: 71.5vw;
+    height: 80px;
+    padding: 10px;
+}
+
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .songbuttons img{
@@ -221,7 +304,22 @@ body{
 
 .upperBar{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: 6px;
+}
+
+.seekbar{
+    width: 63.5vw;
+}
+
+.lowerBar{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 5px;
 }
 
 .songName, .songTime{
@@ -229,3 +327,9 @@ body{
     padding: 0 12px;
 }
 
+.volumeBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
