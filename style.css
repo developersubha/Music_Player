@@ -97,7 +97,7 @@ body{
     max-height: 70vh;
 }
 
-.artistCard{
+.fansofCard{
     margin: 25px;
     display: flex;
     gap: 10px;
@@ -105,7 +105,7 @@ body{
     
 }
 
-.artist{
+.fans{
     width: 180px;
     padding: 8px;
     border-radius: 5px;
@@ -113,11 +113,11 @@ body{
     position: relative;
 }
 
-.artist > *{
+.fans > *{
     padding-top: 6px;
 }
 
-.artist img{
+.fans img{
     width: 100%;
     object-fit: contain;
 }
