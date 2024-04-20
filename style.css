@@ -97,7 +97,7 @@ body{
     max-height: 70vh;
 }
 
-.fansofCard{
+.playlistCard{
     margin: 25px;
     display: flex;
     gap: 10px;
@@ -105,91 +105,22 @@ body{
     
 }
 
-.fans{
+.songs{
     width: 180px;
     padding: 8px;
     border-radius: 5px;
-    background-color: #252525;
     position: relative;
 }
 
-.fans > *{
-    padding-top: 6px;
-}
-
-.fans img{
-    width: 100%;
-    object-fit: contain;
-}
-
-.dailymixCard{
-    margin: 25px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.dailymix{
-    width: 180px;
-    padding: 8px;
-    border-radius: 5px;
+.songs:hover{
     background-color: #252525;
-    position: relative;
 }
 
-.dailymix > *{
+.songs > *{
     padding-top: 6px;
 }
 
-.dailymix img{
-    width: 100%;
-    object-fit: contain;
-}
-
-.recentlyplayCard{
-    margin: 25px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.recentlyplay{
-    width: 180px;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #252525;
-    position: relative;
-}
-
-.recentlyplay > *{
-    padding-top: 6px;
-}
-
-.recentlyplay img{
-    width: 100%;
-    object-fit: contain;
-}
-
-.top50Card{
-    margin: 25px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.top50{
-    width: 180px;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #252525;
-    position: relative;
-}
-
-.top50 > *{
-    padding-top: 6px;
-}
-
-.top50 img{
+.songs img{
     width: 100%;
     object-fit: contain;
 }

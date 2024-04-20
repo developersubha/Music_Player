@@ -7,14 +7,6 @@
     display: flex;
 }
 
-.justi-center{
-    justify-content: center;
-}
-
-.item-center{
-    align-items: center;
-}
-
 .bg-black{
     background-color: black;
     color: white;
